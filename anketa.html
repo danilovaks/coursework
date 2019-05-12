@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>I'm traveling</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Сайт о ...">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<header class="main-header basic">
+		<div class="container">
+			<div class="image"><a href="main.html" title="Главная"><img src="img/logo.png"></a></div>
+			<div class="form-language">
+				<form>
+					<div>
+	                    <select>
+	                    	<option value="en_US">English</option>
+	                    	<option value="pt_BR">Português</option>
+	                    	<option value="fr_FR">Français</option>
+	                    	<option value="it_IT">Italiano</option>
+	                    	<option value="es_ES">Español</option>
+	                    	<option selected="selected" value="ru_RU">Русский</option>
+	                    	<option value="zh_CN">中文 (简化字)</option>
+	                    	<option value="pl_PL">Polski</option>
+	                    	<option value="de_DE">Deutsch</option>    
+	                    </select>
+	                </div>
+				</form>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li class="position-for-hover"><a href="#">Путешествия</a>
+						<ul class="hover">
+							<li><a href="#">Будущие</a></li>
+							<li><a href="#">Прошлые</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Сообщения</a></li>
+					<li><a href="profil.html">Профиль</a></li>
+					<li class="position-for-hover"><a href="#">Настройки</a>
+						<ul class="hover">
+							<li><a href="#">Настройки аккаунта</a></li>
+							<li><a href="#">Выход</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="anketa">
+		<div class="name-contry">
+			<h1 >Португалия</h1>
+		</div>
+		<div class="container-anketa">
+			<div class="anketa-contry">
+				<form>
+					<fieldset>
+						<label>Город/регион
+				        <input type="text" required></label>
+				        <div>
+					        <span>Период прибывания</span>
+					        <label>с 
+					        <input type="date" required></label>
+					        <label>по 
+					        <input type="date" required></label>
+				        </div>
+				        <label>Что запомнилось больше всего<br>
+				        <textarea rows="2" cols="67" name="text" placeholder="Поделитесь впечатлениями" required></textarea></label>
+				        <br>
+				        <label>Что советуешь посетить<br>
+				        <textarea rows="2" cols="67" name="text" placeholder="Оставьте рекомендации" required></textarea></label>
+				        <br>
+				        <label>Добавить фото
+				        <input type="file" name="foto" accept="image/jpeg,image/png,image/gif"></label>
+				        <br>
+				        <div class="route"><a href="#">Добавить маршрут</a></div>
+					</fieldset>
+					<div class="contaner-drinks">
+						<h3>Напитки</h3>
+						<div id="drinks" class="drinks">
+							<ul>
+								<li><a href="#drinks">Напитки</a></li>
+			                    <li><a href="#variety-noal">Безалкогольные</a></li>
+			                    <li><a href="#variety-al">Алкогольные</a></li>
+			                </ul>
+			            </div>
+			            <div id="variety-al" class="variety">
+			                <p><strong>Разновидность</strong></p>
+								<ul>
+									<li class="vine"><a href="#type-vine">Вино</a></li>
+			                    	<li value="bubbly"><a href="#">Шампанские и игристые вина</a></li>
+			                    	<li value="strong"><a href="#">Крепкие напитки</a></li>
+			                    	<li value="beer"><a href="#">Пиво</a></li>
+			                    	<li value="cider"><a href="#">Сидр</a></li>
+			                    </ul>
+						</div>
+						<div id="type-vine">
+							<fieldset class="type">
+				                <legend>Тип</legend>
+									<select required>
+										<option value="">Вино</option>
+										<option value="">Винные напитки</option>
+				                    	<option value="">Кагор</option>
+				                    	<option value="">Портвейн</option>
+				                    	<option value="">Херес</option>
+				                    </select>
+							</fieldset>
+							<fieldset class="color">
+				                <legend>Цвет</legend>
+									<select required>
+										<option value="">Красное</option>
+				                    	<option value="">Белое</option>
+				                    	<option value="">Розовое</option>
+				                    </select>
+							</fieldset>
+							<fieldset class="sugar">
+				                <legend>Содержание сахара</legend>
+									<select required>
+										<option value="">Сухое</option>
+				                    	<option value="">Полусухое</option>
+				                    	<option value="">Полусладкое</option>
+				                    	<option value="">Сладкое</option>
+				                    </select>
+							</fieldset>
+							<fieldset>
+								<label>Производитель 
+					        	<input type="text" required></label>
+					        	<br>
+						        <label>Добавить описание<br>
+						        <textarea rows="2" cols="67" name="text" placeholder="Год урожая/цена/внешний вид/аромат/вкус/оценка качества" required></textarea></label>
+						        <br>
+						        <label>Добавить фото
+					        	<input type="file" name="foto" accept="image/jpeg,image/png,image/gif"></label>
+				        	</fieldset>
+						</div>
+					</div>
+					<div class="btn btn-save"><a href="#">Сохранить</a></div>
+				</form>
+			</div>
+			<div class="anketa-transition">
+				<div class="btn btn-anketa"><a href="#">Хочу посетить</a></div>
+				<div class="btn btn-anketa"><a href="#">Посмотреть отзывы других посетителей</a></div>
+				<div class="btn btn-anketa"><a href="#">Найти об этой стране</a></div>
+				<div class="btn btn-anketa"><a href="#">Найти о напитках в этой стране</a></div>
+			</div>
+		</div>
+	</main>
+
+    <footer>
+	    <div class="container">
+	    	<div class="form-language">
+				<form>
+	                <select>    
+	                    <option value="en_US">English</option>
+	                    <option value="pt_BR">Português</option>
+	                    <option value="fr_FR">Français</option>
+	                    <option value="it_IT">Italiano</option>
+	                    <option value="es_ES">Español</option>
+	                    <option selected="selected" value="ru_RU">Русский</option>
+	                    <option value="zh_CN">中文 (简化字)</option>
+	                    <option value="pl_PL">Polski</option>
+	                    <option value="de_DE">Deutsch</option>    
+	                </select>	
+				</form>
+			</div>
+	    	<div class="contacts">
+	    		<aside class="connection">	
+	    			<h3>Связь с нами</h3>
+					<ul>
+						<li><a class="icon-face" href="#" title="Facebook"></a></li>
+						<li><a class="icon-Twit" href="#" title="Twitter"></a></li>
+						<li><a class="icon-tum" href="#" title="Tumdlr"></a></li>
+						<li><a class="icon-insta" href="#" title="Instagram"></a></li>
+					</ul>
+				</aside>
+				<aside class="modile">	
+	    			<h3>Мобильные приложения</h3>
+					<ul>
+						<li><a class="icon-apple" href="#" title="App Store"></a></li>
+						<li><a class="icon-android" href="#" title="Google Play"></a></li>
+					</ul>
+				</aside>	
+			</div>
+		</div>
+    </footer>
+
+</body>
+
+</html>
