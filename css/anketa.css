@@ -1,0 +1,130 @@
+/*anketa*/
+
+.anketa {
+	background: url(../img/background-r.png) no-repeat 6em 5em;
+	background-size: cover;
+}
+
+.container-anketa {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	grid-template-areas: 
+		"anketa-contry anketa-transition";
+	gap: 1.5em;
+}
+
+.anketa-contry {
+	grid-area: anketa-contry;
+	padding: 2em;
+	background-color: #FDF6FA;
+	box-shadow: 0 0 30px -15px;
+}
+
+.anketa-transition {
+	grid-area: anketa-transition;
+}
+
+.name-contry h1 {
+	margin: 0;
+}
+
+.name-contry {
+	margin-bottom: 1.5em;
+	padding: 1em;
+	background-color: #FDF6FA;
+	box-shadow: 0 0 20px -8px;
+}
+
+.anketa-contry input,
+.anketa-contry textarea,
+.anketa-contry select {
+	padding: 0.4em;
+	margin: 0.5em 0em;
+	border: none;
+	border-bottom: 1px solid #9D9E9E;
+	color: #5B5B5B;
+}
+
+.anketa-contry input[type="file"] {
+	visibility: hidden;
+	border: none;
+}
+
+.anketa-contry label  {
+	cursor: pointer;
+}
+
+.anketa-contry h3 {
+	margin: 2em 0em;
+	margin-bottom: 0em;
+}
+
+.anketa-contry a {
+	display: block;
+	color: #5B5B5B;
+	
+}
+.contaner-drinks a {
+	padding: 0.2em;
+}
+
+.contaner-drinks a:hover {
+	background-color: #C5C6C6;
+	border-radius: 5px;
+}
+
+.drinks li {
+	padding: 0.5em;
+	padding-left: 0em;
+	display: inline-block;
+}
+
+#variety-al,
+#type-vine {
+	display: none;
+}
+
+#variety-al:target {
+	display: block;
+}
+
+#type-vine:target {
+	display: block;
+}
+
+.variety p {
+	margin-bottom: 0.4em;
+}
+
+.variety ul {
+	width: 50%;
+}
+
+.variety li {
+	padding: 0.3em;
+	padding-left: 0em;
+}
+
+.anketa-contry legend {
+	margin: 0.7em 0em;
+}
+
+.anketa-contry select {
+	margin-bottom: 1em;
+}
+
+.btn-save {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.btn-save a {
+	color: #FDF6FA;
+}
+
+.btn-anketa {
+	margin-top: 0;
+	margin-bottom: 1.1em;
+	text-transform: none;
+}

@@ -74,18 +74,18 @@
 					<p>Sant-Petesburg</p>
 					<div class="btn-edit"><a href="#">Редактировать мой профиль</a></div>
 				</section>
-				<nav class="menu-info">
+				<nav class="menu_info">
 					<ul>
 						<li><a href="#">Информация</a></li>
-						<li><a href="#foto-add">Фотографии</a></li>
+						<li><a href="#">Фотографии</a></li>
 						<li><a href="#">Отзывы</a></li>
 						<li><a href="#">Друзья</a></li>
 						<li><a href="#">Избранное</a></li>
 					</ul>
 				</nav>
-				<div class="info">
+				<div class="info" id="info">
 					<section>
-						<div class="shot-info">
+						<div class="shot_info">
 							<div>
 								<p>10, мужской</p>
 								<p>Говорит на тюленьем</p>
@@ -104,20 +104,28 @@
 						<p>Россия</p>
 					</section>
 				</div>
-				<!--<div id="foto-add" class="foto-add">
-					<section class="contaner-gallery">
+				<div id="foto_add" class="foto-add">
+					<section class="contaner_gallery">
 						<h2>Фотографии профиля</h2>
 						<div>
-							<img src="img/Тюлень.jpg">
+							<img class="click" src="img/Тюлень.jpg">
+							<img class="click" src="img/Друг.jpg">
+							<img class="click" src="img/Байкал.jpg">
 						</div>
 					</section>
 				</div>
-				<div><section></section></div>
+				<!--<div><section></section></div>
 				<div><section></section></div>
 				<div><section></section></div>-->
 			</div>
 		</div>
 	</main>
+	<div id="backPop">
+		<div id="popUp">
+  			<img id="bigImg" src="">
+    		<div id="inRight"></div>
+		</div>
+  	</div>
 
     <footer>
 	    <div class="container">
@@ -156,6 +164,8 @@
 			</div>
 		</div>
     </footer>
+
+    <script src="js/script-profil.js"></script>
 
 </body>
 
